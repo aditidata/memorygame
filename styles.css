@@ -1,0 +1,39 @@
+.memory-game {
+    text-align: center;
+}
+
+.score {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+body {
+    height: 100vh;
+    display: flex;
+    background-image: url(https://www.barrie.ca/sites/default/files/styles/16_9/public/2023-07/Game-On.jpg?itok=3pRQRUgu);
+  }
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #e339ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card.matched {
+    background-color: #2ecc71; /* Green */
+    color: white;
+}
